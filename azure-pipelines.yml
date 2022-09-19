@@ -64,7 +64,7 @@ stages:
                 action: createSecret
                 secretName: $(imagePullSecret)
                 dockerRegistryEndpoint: 'Container Registry Connection'
-                kubernetesServiceConnection: 'Kubernetes Cluster Connection'
+                kubernetesServiceConnection: 'openshift-sandbox-pworras-dev-1663551711167'
                 namespace: 'default'
           - task: KubernetesManifest@0
             displayName: Deploy to Kubernetes cluster
